@@ -672,6 +672,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -739,6 +759,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .lg\:row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -747,8 +783,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0px;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:grid {
+    display: grid;
   }
 
   .lg\:h-full {
@@ -775,8 +819,25 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-shrink: 0;
   }
 
+  .lg\:auto-rows-min {
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
